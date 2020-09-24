@@ -1,7 +1,7 @@
 require("../config/db");
 const express = require("express");
 const cors = require("cors");
-const usersRouter = require("./routers/users");
+const commentsRouter = require("./routers/comments");
 const tasksRouter = require("./routers/tasks");
 
 //!VARIABLES
@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
 //!ROUTERS
-app.use(usersRouter);
+app.use(commentsRouter);
 app.use(tasksRouter);
 
 module.exports = app;
