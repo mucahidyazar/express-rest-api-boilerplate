@@ -1,0 +1,37 @@
+{
+  "name": "express-rest-api-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6",
+    "mongodb": "^3.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-preset-env": "^1.7.0",
+    "cors": "^2.8.5",
+    "env-cmd": "^10.1.0",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "env-cmd -f ./config/env/dev.env nodemon index.js",
+    "test": "env-cmd -f ./config/env/test.env jest --watchAll --runInBand --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
